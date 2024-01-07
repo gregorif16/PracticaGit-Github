@@ -1,0 +1,64 @@
+<h1>- ¿Qué comando utilizaste en el paso 11? ¿Por qué? </h1>
+
+Utilice git reset --hard HEAD, porque este comando resetea el HEAD al commit anterior,
+ eliminando así el último commit y deshaciendo los cambios en el working copy. 
+
+<h1>- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué? </h1>
+
+Primero utilice "git reflog" para poder acceder al hash del commit y hice uso de "git reset --hard"
+con el hash de commit, de esta manera pude restablecer el estado del repositorio al commit anterior,
+ perdiendo los cambios no confirmados.
+
+<h1> - El merge del paso 13, ¿Causó algún conflicto? ¿Por qué? </h1>
+
+Si hubo un conflicto, pero creo que hubo un merge fast-forward, dado que styled se mueve al ultimo 
+commit de main.
+
+<h1> - El merge del paso 19, ¿Causó algún conflicto? ¿Por qué? </h1>
+
+No tuve conflictos, porque  las modificaciones realizadas en las ramas que estás fusionando
+ son compatibles, es decir, no afectan las mismas líneas de código o no introducen cambios 
+ conflictivos en el mismo archivo.
+
+
+- El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
+
+No tuve conflictos, porque  las modificaciones realizadas en las ramas que estás fusionando
+ son compatibles, es decir, no afectan las mismas líneas de código o no introducen cambios 
+ conflictivos en el mismo archivo.
+
+- ¿Qué comando o comandos utilizaste en el paso 25?
+
+git log --graph --oneline --all
+
+
+- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
+
+Si, porque no se habia hecho ninguna modificacion a main desde la creacion de title.
+
+- ¿Qué comando o comandos utilizaste en el paso 27?
+
+git reset --soft HEAD^
+
+- ¿Qué comando o comandos utilizaste en el paso 28?
+
+git reset --hard
+
+- ¿Qué comando o comandos utilizaste en el paso 29?
+
+git branch -D title
+
+- ¿Qué comando o comandos utilizaste en el paso 30?
+
+git reflog
+git reset --hard + hash del merge
+
+- ¿Qué comando o comandos usaste en el paso 32?
+
+git log 
+git reset --hard + hash del commit
+
+- ¿Qué comando o comandos usaste en el punto 33?
+
+git log 
+git reset --hard + harsh del commit
